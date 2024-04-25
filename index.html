@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Verification</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            AGE VERIFICATION
+        </h1>
+        <hr>
+        <form>
+            <label for="Day">Enter Day</label>
+            <input type="number" id="Day" min="1" max="31" required>
+            <label for="Month">Enter Month</label>
+            <input type="number" id="Month" min="1" max="12" required>
+            <label for="Year">Enter Year</label>
+            <input type="number" id="Year" min="1900" max="2024" step="1" placeholder="2024" required style="width: 15vh;"/>
+            <hr>
+            <input type="submit" value="Go" class="goBtn" onclick="checkingCredentiels(event)">
+        </form>
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
