@@ -8,7 +8,7 @@ function checkingCredentiels (event) {
         let currentDate = new Date();
         let currentYear = currentDate.getFullYear();
         var totalAge = currentYear - year;
-        if (totalAge <= 15) {
+        if ((totalAge <= 15) && (dayInput.value >= currentDate.getDate())) {
             alert("Your age is Restricted");
         }
         else {
